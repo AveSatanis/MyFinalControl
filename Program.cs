@@ -11,3 +11,17 @@ void PrintArray(string[] array)
     }
     Console.WriteLine($"{array[array.Length - 1]}]");
 }
+
+int CountNewArray(string[] array)
+{
+    int countNewArray = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= maxSize)
+        {
+            countNewArray++;
+        }
+    }
+
+    return countNewArray;
+}
